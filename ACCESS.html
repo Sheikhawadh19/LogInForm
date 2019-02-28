@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Animated Side Bar Menu</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
+    <link rel="stylesheet" href="ACCESS.css">
+<script>
+    function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('content').style.width = '250px';
+    }
+</script>
+</head>
+<body>
+<div id="content">
+    <span class="slide">
+        <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+        </a>
+    </span>
+<div id="menu" class="nav">
+    <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+    </a>
+    <a href="#">Home</a>
+    <a href="#">My Orders</a>
+    <a href="#">Create Order</a>
+    <a href="#">Log out</a>
+</div>
+<h1>Responsive Animated Side Bar Menu</h1>
+</div>
+
+</body>
+</html>
